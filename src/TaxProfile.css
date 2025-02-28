@@ -1,0 +1,118 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    font-family: "Roboto", sans-serif;
+    background-color:  #e0f2ff !important; 
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+/* Container */
+.app-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e0f2ff;
+}
+
+/* Upload Card */
+.upload-card {
+    background: white;
+    padding: 15px;  /* Reduced padding */
+    margin: 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 450px; /* Ensures it doesn't overflow */
+    max-height: 85vh; /* Ensures it fits within the screen */
+    overflow-y: auto; /* Allows scrolling if needed */
+    text-align: center;
+}
+
+/* Header */
+.upload-card h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #00c48c;
+    margin-bottom: 15px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1a202c;
+}
+
+/* Input Fields */
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #00c48c;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+input[type="file"]:focus {
+    outline: none;
+    border-color: #00897b;
+    box-shadow: 0 0 5px rgba(0, 196, 140, 0.5);
+}
+
+/* Error & Success Messages */
+.error-message {
+    color: #e63946;
+    font-size: 14px;
+    margin-top: 5px;
+    background: #ffcccc;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.success-message {
+    color: #00c48c;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #00c48c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #00a699;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .upload-card {
+        width: 100%;
+    }
+}

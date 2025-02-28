@@ -1,0 +1,286 @@
+/* General Styles for Expense Page */
+.exp-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Sidebar */
+.exp-sidebar {
+    width: 250px;
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+}
+
+.exp-sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.exp-sidebar .exp-nav-link {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.exp-sidebar .exp-nav-link:hover {
+    background-color: #495057;
+}
+
+.exp-dropdown {
+    position: relative;
+}
+
+.exp-dropdown-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.exp-dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #343a40;
+    width: 100%;
+    z-index: 1;
+}
+
+.exp-dropdown-menu button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.exp-dropdown-menu button:hover {
+    background-color: #495057;
+}
+
+.exp-dropdown:hover .exp-dropdown-menu {
+    display: block;
+}
+
+/* Main Content */
+.exp-main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.exp-header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.exp-btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.exp-btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.exp-user-icon {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+/* Summary Cards */
+.exp-summary-cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.exp-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.exp-card h5 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.exp-card p {
+    margin: 10px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Expense Form */
+.exp-expense-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.exp-expense-form h3 {
+    margin-top: 0;
+}
+
+.exp-form-group {
+    margin-bottom: 15px;
+}
+
+.exp-form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.exp-form-group input,
+.exp-form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.exp-btn-success {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.exp-btn-success:hover {
+    background-color: #218838;
+}
+
+/* Expense Table */
+.exp-expense-table {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exp-expense-table h3 {
+    margin-top: 0;
+}
+
+.exp-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.exp-table th,
+.exp-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.exp-table th {
+    background-color: #f8f9fa;
+}
+
+.exp-btn-edit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.exp-btn-edit:hover {
+    background-color: #0056b3;
+}
+
+.exp-btn-delete {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.exp-btn-delete:hover {
+    background-color: #c82333;
+}
+
+/* Toast Notification */
+.exp-toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exp-toast-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exp-toast-header button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Dark Mode */
+.exp-dark-mode {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+.exp-dark-mode .exp-sidebar {
+    background-color: #1c1e21;
+}
+
+.exp-dark-mode .exp-card,
+.exp-dark-mode .exp-expense-form,
+.exp-dark-mode .exp-expense-table {
+    background-color: #2c2f33;
+    color: #f8f9fa;
+}
+
+.exp-dark-mode .exp-btn-primary,
+.exp-dark-mode .exp-btn-success,
+.exp-dark-mode .exp-btn-edit,
+.exp-dark-mode .exp-btn-delete {
+    filter: brightness(90%);
+}
