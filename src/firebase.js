@@ -11,12 +11,12 @@ import {
 import { getFirestore, doc, setDoc, getDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBi7t-rbrz5E7lrC7uSV9urrcdMnbJBN6k",
-    authDomain: "sample-firebase-ai-app-b87d2.firebaseapp.com",
-    projectId: "sample-firebase-ai-app-b87d2",
-    storageBucket: "sample-firebase-ai-app-b87d2.appspot.com",
-    messagingSenderId: "1027443327876",
-    appId: "1:1027443327876:web:329ca2565b0a002b05d3d1"
+    apiKey: "add-your-api-key",
+    authDomain: "add-your-api-key",
+    projectId: "add-your-api-key",
+    storageBucket: "add-your-api-key",
+    messagingSenderId: "add-your-api-key",
+    appId: "add-your-api-key"
 };
 
 const app = initializeApp(firebaseConfig);
