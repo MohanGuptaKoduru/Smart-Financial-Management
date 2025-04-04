@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest  # Use Windows runner
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18  # Ensure this matches your project’s Node.js version
+
+      - name: Install dependencies
+        run: npm ci  # Ensures a clean install based on package-lock.json
+
+      - name: Run tests
+        run: npm test -- --clearCache  # Clears Jest cache before running tests
